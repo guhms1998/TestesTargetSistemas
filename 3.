@@ -1,0 +1,26 @@
+let faturamento = [100, 200, 150, 300, 250, 400, 350, 500, 450, 600, 550, 650, 700, 800, 750, 900, 850, 1000, 950, 1100, 1050, 1200];
+
+// Calcular o menor valor de faturamento
+let menorValor = Math.min(...faturamento);
+console.log("Menor valor de faturamento: " + menorValor);
+
+// Calcular o maior valor de faturamento
+let maiorValor = Math.max(...faturamento);
+console.log("Maior valor de faturamento: " + maiorValor);
+
+// Calcular a média mensal de faturamento
+let soma = 0;
+for (let i = 0; i < faturamento.length; i++) {
+    soma += faturamento[i];
+}
+let mediaMensal = soma / faturamento.length;
+console.log("Média mensal de faturamento: " + mediaMensal);
+
+// Calcular o número de dias em que o faturamento foi superior à média mensal
+let diasAcimaDaMedia = 0;
+for (let i = 0; i < faturamento.length; i++) {
+    if (faturamento[i] > mediaMensal) {
+        diasAcimaDaMedia++;
+    }
+}
+console.log("Número de dias com faturamento acima da média mensal: " + diasAcimaDaMedia);
