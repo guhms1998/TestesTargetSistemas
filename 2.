@@ -1,0 +1,13 @@
+
+let num = 8; // O número que deseja verificar se faz parte da sequência de Fibonacci
+let fib = [0, 1]; // Iniciando a sequência com os dois primeiros números
+
+for (let i = 2; i < num; i++) {
+    fib[i] = fib[i-1] + fib[i-2]; // Gerando os próximos números da sequência
+}
+
+if (fib.includes(num)) { // Verificando se o número informado está na sequência
+    console.log(`O número ${num} faz parte da sequência de Fibonacci.`);
+} else {
+    console.log(`O número ${num} não faz parte da sequência de Fibonacci.`);
+}
