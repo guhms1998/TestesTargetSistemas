@@ -1,0 +1,23 @@
+// Valores de faturamento
+var faturamentoSP = 67.836.43;
+var faturamentoRJ = 36.678.66;
+var faturamentoMG = 29.229.88;
+var faturamentoES = 27.165.48;
+var faturamentoOutros = 19.849.53;
+
+// Valor total de faturamento
+var totalFaturamento = faturamentoSP + faturamentoRJ + faturamentoMG + faturamentoES + faturamentoOutros;
+
+// Calculando o percentual de representação de cada estado
+var percentualSP = (faturamentoSP / totalFaturamento) * 100;
+var percentualRJ = (faturamentoRJ / totalFaturamento) * 100;
+var percentualMG = (faturamentoMG / totalFaturamento) * 100;
+var percentualES = (faturamentoES / totalFaturamento) * 100;
+var percentualOutros = (faturamentoOutros / totalFaturamento) * 100;
+
+// Imprimindo o resultado
+console.log("Percentual SP: " + percentualSP + "%");
+console.log("Percentual RJ: " + percentualRJ + "%");
+console.log("Percentual MG: " + percentualMG + "%");
+console.log("Percentual ES: " + percentualES + "%");
+console.log("Percentual Outros: " + percentualOutros + "%");
